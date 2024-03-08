@@ -1,0 +1,100 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+#player-container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#audio-controls {
+    margin-bottom: 20px;
+}
+
+#play-btn,
+#pause-btn,
+#stop-btn {
+    padding: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+input[type="range"] {
+    width: 200px;
+}
+
+#timeline {
+    height: 40px;
+    background-color: #e0e0e0;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+#timeline-marker {
+    width: 2px;
+    height: 100%;
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#track-list {
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.track-item {
+    padding: 10px;
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+}
+
+.track-item:last-child {
+    margin-bottom: 0;
+}
+
+.track-item audio {
+    margin-right: 10px;
+}
+
+#timeline {
+    width: 100%;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.timeline-marker {
+    width: 20px;
+    height: 20px;
+    background-color: #007bff;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.timeline-content {
+    padding-left: 30px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+}
